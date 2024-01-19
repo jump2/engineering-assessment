@@ -1,0 +1,22 @@
+{
+  "name": "aaron/engineering-assessment",
+  "description": "Engineering Assessment",
+  "require": {
+    "elasticsearch/elasticsearch": "^8.11"
+  },
+  "authors": [
+    {
+      "name": "aaron"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
