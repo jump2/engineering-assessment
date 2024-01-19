@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <h3 class="applicant">{{item.applicant}}</h3>
-        <p class="tag">
+        <p class="tag" v-if="item.tag">
             <a-tag>{{item.tag}}</a-tag>
         </p>
         <div>
