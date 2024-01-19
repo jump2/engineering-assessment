@@ -16,8 +16,24 @@ class TruckController extends BaseController
             'index' => 'engineering-assessment',
             'body'  => [
                 'query' => [
-                    'match' => [
-                        'Applicant' => $get['q']
+                    'bool' => [
+                        'should' => [
+                            'match' => [
+                                'Applicant' => $get['q']
+                            ],
+                            'match' => [
+                                'Address' => $get['q']
+                            ],
+                            'match' => [
+                                'LocationDescription' => $get['q']
+                            ],
+                            'match' => [
+                                'FacilityType' => $get['q']
+                            ],
+                            'match' => [
+                                'FoodItems' => $get['q']
+                            ],
+                        ],
                     ]
                 ]
             ]
