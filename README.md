@@ -11,7 +11,7 @@ This is a project about retrieving San Francisco food truck cuisine. It involves
 
 # How To Start
 1. clone the repo and `cd` into it
-2. run the command `docker-compose up -d` to start api server
+2. run the command `docker-compose up -d` to start api server and elasticsearch server
 3. `cd` the dir `web` to start front-end server
 4. run `npm install`
 5. run `npm run serve` to start the server
